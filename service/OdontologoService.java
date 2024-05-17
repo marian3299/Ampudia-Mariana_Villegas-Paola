@@ -11,8 +11,8 @@ import java.util.List;
 public class OdontologoService {
     private IDao<Odontologo> odontologoIDao;
 
-    public OdontologoService() {
-        odontologoIDao = new OdontologoDAOH2();
+    public OdontologoService(IDao<Odontologo> odontologoIDao) {
+        this.odontologoIDao = odontologoIDao;
     }
 
     public Odontologo guardarOdontologo(Odontologo odontologo){
